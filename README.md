@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Solana Flash Loan Arbitrage Trading Bot
 
 A fully functional flash loan arbitrage trading bot for Solana that leverages price discrepancies between decentralized exchanges.
