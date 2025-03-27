@@ -52,7 +52,7 @@ A fully functional flash loan arbitrage trading bot for Solana that leverages pr
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/solana-arbitrage-bot.git
+   git clone https://github.com/tylerbessire/solana-arbitrage-bot.git
    cd solana-arbitrage-bot
    ```
 
