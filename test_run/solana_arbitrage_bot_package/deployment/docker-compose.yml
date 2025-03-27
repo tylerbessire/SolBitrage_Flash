@@ -1,0 +1,29 @@
+version: '3'
+services:
+  frontend:
+    build:
+      context: ../frontend
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    environment:
+      - REACT_APP_API_URL=http://backend:3001
+    restart: always
+
+  backend:
+    build:
+      context: ../server
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - PORT=3001
+      - SOLANA_RPC_URL=https://api.mainnet-beta.solana.com
+    volumes:
+      - ../config:/app/config
+      - ../wallets:/app/wallets
+      - ../logs:/app/logs
+    restart: always
